@@ -3,6 +3,7 @@ import axios from 'axios';
 import NasaTitle from './NasaTitle';
 import NasaDate from './NasaDate';
 import NasaImg from './NasaImg';
+import NasaText from './NasaText'
 
 
 function Nasa() {
@@ -26,6 +27,7 @@ function Nasa() {
       <NasaTitle title={data.title} />
       <NasaDate date={data.date} />
       <NasaImg image={data.hdurl} />
+      <NasaText text={data.explanation} />
     </div>
   );
 }

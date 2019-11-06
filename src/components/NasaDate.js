@@ -3,9 +3,9 @@ import React from 'react';
 
 const NasaDate = props => {
   return (
-    <div>
+    <h2>
       {props.date}
-    </div>
+    </h2>
   )
 }
 
