@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import NasaTitle from './NasaTitle';
+import NasaDate from './NasaDate';
 
 
 function Nasa() {
@@ -20,7 +22,8 @@ function Nasa() {
 
   return (
     <div>
-
+      <NasaTitle title={data.title} />
+      <NasaDate date={data.date} />
     </div>
   );
 }
