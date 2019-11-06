@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NasaTitle from './NasaTitle';
 import NasaDate from './NasaDate';
+import NasaImg from './NasaImg';
 
 
 function Nasa() {
@@ -24,6 +25,7 @@ function Nasa() {
     <div>
       <NasaTitle title={data.title} />
       <NasaDate date={data.date} />
+      <NasaImg image={data.hdurl} />
     </div>
   );
 }
