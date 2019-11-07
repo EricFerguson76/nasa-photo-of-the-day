@@ -3,8 +3,15 @@ import axios from 'axios';
 import NasaTitle from './NasaTitle';
 import NasaDate from './NasaDate';
 import NasaImg from './NasaImg';
-import NasaText from './NasaText'
+import NasaText from './NasaText';
+import styled from 'styled-components';
 
+export const Body = styled.div`
+width: 100%;
+background: #4682B4;
+
+
+`;
 
 function Nasa() {
 
@@ -23,12 +30,14 @@ function Nasa() {
   }, [])
 
   return (
-    <div>
+    <Body>
       <NasaTitle title={data.title} />
+
       <NasaDate date={data.date} />
       <NasaImg image={data.hdurl} />
       <NasaText text={data.explanation} />
-    </div>
+
+    </Body>
   );
 }
 

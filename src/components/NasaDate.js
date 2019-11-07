@@ -1,11 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
+
+
+export const Date = styled.h2`
+padding-top: 20px;
+  color: white;
+`;
 
 
 const NasaDate = props => {
   return (
-    <h2>
+    <Date>
       {props.date}
-    </h2>
+    </Date>
   )
 }
 

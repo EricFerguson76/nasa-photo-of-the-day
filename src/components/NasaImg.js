@@ -1,10 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
+
+export const Image = styled.img`
+  padding-top: 40px;
+`
 
 
 const NasaImg = props => {
   return (
     <>
-      <img src={props.image} alt='Nasa APOD' width='500' />
+      <Image src={props.image} alt='Nasa APOD' width='400' />
     </>
   )
 }
